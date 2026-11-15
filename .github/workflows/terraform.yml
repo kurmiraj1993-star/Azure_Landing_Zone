@@ -42,8 +42,8 @@ jobs:
 
       # Step 3: Terraform Version
 
-      - name: Terraform Version
-        run: terraform version
+      # - name: Terraform Version
+      #   run: terraform version
 
       # Step 4: Terraform Init
 
