@@ -1,12 +1,10 @@
-name: Azure Infrastructure Deployment
+# name: Azure Infrastructure Deployment
 
 on:
   push:
     branches:
       - main
       - feature/**
-
-  workflow_dispatch:
 
 permissions:
   id-token: write
