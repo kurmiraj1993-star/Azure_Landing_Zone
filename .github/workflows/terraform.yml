@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        workflow_directory: ./environment/dev
+        working_directory: ./environment/dev
 
     env:
       # ARM_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
