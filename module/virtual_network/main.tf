@@ -1,4 +1,4 @@
-resource "azurerm_virtual_network" "example" {
+resource "azurerm_virtual_network" "virtual" {
     for_each = var.vnet
   name                = each.value.name
   resource_group_name = each.value.resource_group_name
