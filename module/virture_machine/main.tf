@@ -12,7 +12,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   size                = each.value.size
   admin_username      = each.value.admin_username
   admin_password      = each.value.admin_password
-  network_interface_ids = [data.azurerm_network_interface.nic[each.value].id]
+  network_interface_ids = [data.azurerm_network_interface.nic[each.key].id]
 
     os_disk {
     caching              = each.value.caching
