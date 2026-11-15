@@ -27,9 +27,9 @@ jobs:
       # ARM_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
       # ARM_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
       # ARM_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
-      ARM_CLIENT_ID: "74b9e77e-27c8-463c-8988-1abe7b37c8dc"
-      ARM_TENANT_ID: "a3f64c6f-ee3d-499e-876d-c6c5cac2b026"
-      ARM_SUBSCRIPTION_ID: "42ce087e-50f5-4f13-901d-04d743c08316"
+      ARM_CLIENT_ID: "80f9819c-5a7b-4a8c-9fee-c379a864a6fb"
+      ARM_TENANT_ID: "39d3196b-7780-4e40-bc6f-1ad0907ddfac"
+      ARM_SUBSCRIPTION_ID: "4548392c-1285-427f-ab2d-deed87c2d4a0"
       ARM_USE_OIDC: true
 
     steps:
