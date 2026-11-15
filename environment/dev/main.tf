@@ -3,6 +3,7 @@ module "rk-rg" {
     rgs=var.rgs
 }
 module "rk-vnet" {
+    depends_on = [ module.rk-rg ]
     source = "../../module/virtual_network"
   vnet=var.vnet
 }
