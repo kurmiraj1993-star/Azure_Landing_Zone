@@ -16,12 +16,17 @@ module "rk-publicip" {
   depends_on = [ module.rk-rg ]
   source = "../../module/public_ip"
   pip = var.pip
-  
 }
-module "rk-vm" {
+
+module "rk-nic" {
   depends_on = [ module.rk-subnet, module.rk-publicip ]
+  source = "../../module/azurerm_nic_card"
+  vmnic = var.vmnic
+}
+
+module "rk-vm" {
+  depends_on = [ module.rk-subnet, module.rk-nic ]
   source = "../../module/virture_machine"
   linuxvm = var.linuxvm
-  vmnic = var.vmnic
 }
 

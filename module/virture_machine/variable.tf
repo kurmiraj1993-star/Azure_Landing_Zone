@@ -1,7 +1,1 @@
-variable "vmnic" {
-  
-}
-
-variable "linuxvm" {
-  
-}
+variable "linuxvm" {}

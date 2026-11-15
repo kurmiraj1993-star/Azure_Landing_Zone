@@ -82,6 +82,7 @@ pip = {
 linuxvm = {
   vm1 = {
     name                 = "frontend-vm"
+    nic_name             = "frontend-nic"
     resource_group_name  = "raj12"
     location             = "central india"
     size                 = "standard_b2ats_v2"
@@ -97,6 +98,7 @@ linuxvm = {
 
   vm2 = {
     name                 = "backend-vm"
+    nic_name             = "backend-nic"
     resource_group_name  = "raj12"
     location             = "central india"
     size                 = "standard_b2ats_v2"
