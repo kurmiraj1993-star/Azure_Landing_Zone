@@ -7,7 +7,7 @@ data "azurerm_subnet" "subnet" {
 
 data "azurerm_public_ip" "public" {
   for_each = var.vmnic
-  name                = each.value_publicip_name
+  name                = each.value.publicip_name
   resource_group_name = each.value.resource_group_name
   }
 
