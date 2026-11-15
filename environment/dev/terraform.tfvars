@@ -48,7 +48,7 @@ subnet = {
 
 vmnic = {
   vmnic1 = {
-    name                 = "frontend_nic"
+    name                 = "frontend-nic"
     nic_name             = "subnet12"
     publicip_name        = "publicip1"
     location             = "central india"
@@ -56,7 +56,7 @@ vmnic = {
     virtual_network_name = "vnet12"
   }
   vmnic2 = {
-    name                 = "backend_nic"
+    name                 = "backend-nic"
     nic_name             = "subnet13"
     publicip_name        = "publicip2"
     location             = "central india"
